@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
+
   <header class="header">
     <div class="intro bg-grey flex flex-column vh-50 vh-75-m" style="background-image: url('images/june.jpg')">
        <nav class="mh4 flex justify-between">
@@ -113,7 +114,7 @@
         </form>
       </div>
 
-      <div class="pb4 pa0-m">
+<!--       <div class="pb4 pa0-m">
         <div class="flex items-center flex-column flex-row-m">
           <div class="w-40-m w-60-l w-100 cover vh-25 vh-75-m bg-center" style="background-image: url('images/IMG_3722-6.jpg')"></div>
           <div class="w-60-m w-40-l w-100 mw6 vh-75-m flex items-center-m">
@@ -135,6 +136,41 @@
               </ul>
             </div>
           </div>
+        </div>
+      </div> -->
+
+      <div class="mv4">
+        <div class="grid-container">
+          <h2 class="sr">Testimonials</h2>
+          <ul class="nolist c-dark tc carousel">
+            <li class="ta-center mh3 mv0">
+              <img src="//c1.staticflickr.com/3/2645/3989809063_47b31f9fbd_b.jpg" alt="" width="150px" height="150px" class="di testimonials__object-fit br-pill">
+              <blockquote class="bn pa0 ma0 f4 fw2">
+              <h3 class="f3 mv2">
+              <span class="db c-primary fs-normal">Roger Kim</span>
+              <span class="db fw2 fs-normal">United Kingdom</span>
+              </h3>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eos eius labore, delectus mollitia nihil, quasi doloribus, fugit pariatur assumenda sint. At modi illo laudantium!
+              </blockquote>
+            </li>
+            <li class="ta-center mh3 mv0">
+              <img src="images/deliver.svg" alt="" width="150px" height="150px" class="di testimonials__object-fit">
+              <h3 class="f3">Lorem ipsum.</h3>
+              <blockquote class="bn quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorum, aliquam saepe, rerum consequatur magni?</blockquote>
+            </li>
+<!--             <li class="ta-center mh3 mv0">
+              <img src="images/enjoy.svg" alt="" width="150px" height="150px" class="di testimonials__object-fit">
+              <h3 class="f3">Lorem ipsum.</h3>
+              <blockquote class="bn quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti laboriosam reprehenderit expedita deserunt, aperiam accusantium.</blockquote>
+            </li> -->
+          </ul>
+          <ul class="pa0 mv2 mh0 tc vc">
+            <li class="carousel__prev carousel__option dib h1 w1 pointer br4 carousel--active-item"></li>
+            <li class="carousel__next carousel__option dib h1 w1 pointer br4"></li>
+          </ul>
+
+       <!--              <button class="carousel__next carousel__option">Next</button>
+          <button class="carousel__prev carousel__option">Previous</button> -->
         </div>
       </div>
 
@@ -287,6 +323,9 @@
 
 
 </footer>
+
+<script src="https://unpkg.com/siema@1.4.6/dist/siema.min.js"></script>
+<script src="js/carousel-config.js"></script>
 
   <script src="js/app.js" charset="utf-8"></script>
 </body>

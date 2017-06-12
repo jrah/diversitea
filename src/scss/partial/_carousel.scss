@@ -1,0 +1,8 @@
+.carousel {
+  &__option {
+    background-color: $grey;
+  }
+    &--active-item {
+      background-color: $primary;
+    }
+}
