@@ -12,11 +12,21 @@ $mqs: (
   lg: 78em
 );
 
-// craft modules
-@import "craftmodule/index";
+// craft init
+@import "craftmodule/init";
 
 // partials
 @import "partial/index";
+
+// craft modules
+@import "craftmodule/susy";
+@import "craftmodule/base";
+@import "craftmodule/button";
+@import "craftmodule/form";
+@import "craftmodule/notice";
+@import "craftmodule/svg";
+@import "craftmodule/theme";
+
 
 $breakpoint-not-small: 'screen and (min-width: 35.5em)';
 $breakpoint-medium: 'screen and (min-width: 48em)';
