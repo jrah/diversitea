@@ -1,7 +1,8 @@
 // project var
 
-$primary: #84bd00;
+$primary: #B9543C;
 $anchor-bottom-hover: darken($primary, 5%);
+$font-family: "raleway", -apple-system, BlinkMacSystemFont, system, sans-serif;
 
 @import "susy/sass/susy";
 // modules
@@ -35,6 +36,26 @@ $breakpoint-large: 'screen and (min-width: 78em)';
 // tachyons
 @import "tachyons-sass/tachyons";
 
+.flex-column-reverse  { flex-direction: column-reverse; }
+.flex-row-reverse     { flex-direction: row-reverse; }
+
+
+  @media #{$breakpoint-not-small} {
+
+  .flex-row-reverse-ns { flex-direction: row-reverse; }
+  .flex-wrap-reverse-ns { flex-wrap: wrap-reverse; }
+}
+  @media #{$breakpoint-medium} {
+
+    .flex-column-reverse-m { flex-direction: column-reverse; }
+  .flex-row-reverse-m { flex-direction: row-reverse; }
+}
+  @media #{$breakpoint-large} {
+    .flex-row-reverse-l { flex-direction: row-reverse; }
+  .flex-wrap-reverse-l { flex-wrap: wrap-reverse; }
+}
+
+.bg-primary  { background-color: $primary }
 
 @mixin notice($border-color: $yellow, $background-color: $grey-lightest) {
   border-left: 6px solid $border-color;
