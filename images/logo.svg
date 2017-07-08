@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="197px" viewBox="0 0 223 197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="로고1" transform="translate(0.000000, 2.000000)">
+            <g id="Group" transform="translate(52.000000, 0.000000)" stroke="#000000" stroke-width="4">
+                <path d="M0.5,0.3 L0.5,37.8 C0.5,70.7 27.1,97.3 60,97.3 C92.9,97.3 119.5,70.7 119.5,37.8 L119.5,0.3 L0.5,0.3 L0.5,0.3 Z" id="Shape"></path>
+                <path d="M0.5,37.8 C0.5,37.8 27,18.3 60,48.8 C60,48.8 96,85.2 119.5,43.8" id="Shape"></path>
+                <path d="M23.5,118.3 L96,118.3" id="Shape"></path>
+            </g>
+            <text id="Diversitea" fill="#000000" font-family="Helvetica" font-size="50" font-weight="normal">
+                <tspan x="0" y="183.28">Diversitea</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
