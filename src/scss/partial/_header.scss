@@ -1,3 +1,11 @@
+%toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  user-select: none;
+  z-index: 2;
+}
+
 .header {
   .menu {
     display: none;
@@ -5,7 +13,6 @@
     @include mq(md) {
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: flex-end;
       position: relative;
       padding: 0;
@@ -19,6 +26,10 @@
     }
 
     &--open {
+      // make toggle icon white when clicked
+      & + .menu__toggle {
+        color: $white;
+      }
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -39,15 +50,10 @@
     }
 
   &__toggle {
+    @extend %toggle;
     @include mq(md) {
       display: none;
     }
-
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    user-select: none;
-    z-index: 2;
     }
   }
 
