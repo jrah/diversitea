@@ -20,7 +20,69 @@ $mqs: (
 @import "partial/index";
 
 // craft modules
-@import "craftmodule/susy";
+// @import "craftmodule/susy";
+
+$susy: (
+    columns: 12,
+    container: 1200px,
+    gutters: 1/4,
+    global-box-sizing: border-box,
+    debug: (image: hide)
+);
+
+.grid {
+  // use interpolation to produce correct classes
+  // get 1 to susy grid columns via susy object (map)
+  @for $i from 1 through map-get($susy, columns) {
+    // nest loop, loop backwards
+    @for $n from map-get($susy, columns) through $i {
+      &-#{$i}-#{$n}  {
+        @include span($i of $n);
+      }
+    }
+  }
+
+  @for $i from 1 through map-get($susy, columns) {
+    // nest loop, loop backwards
+    @for $n from map-get($susy, columns) through $i {
+      &-#{$i}-#{$n}  {
+        // @each media query
+        @each $mq, $size in $mqs {
+          @include mq(#{$mq}) {
+            &-#{$mq} {
+              @include span($i of $n);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-container {
+    @include container(90%);
+    @include mq(md) {
+      @include container(70%);
+    }
+
+
+  }
+
+  &-omega {
+    @include last;
+    // @each media query
+    @each $mq, $size in $mqs {
+      @include mq(#{$mq}) {
+        &-#{$mq} {
+          @include last;
+        }
+      }
+    }
+  }
+
+  &-break {
+    @include break;
+  }
+}
 @import "craftmodule/base";
 @import "craftmodule/button";
 @import "craftmodule/form";
