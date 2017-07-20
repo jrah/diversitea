@@ -129,7 +129,3 @@ $breakpoint-large: 'screen and (min-width: 78em)';
 .notice {
   @include notice;
 }
-
-.grid-container-xtight {
-  @include container(75%);
-}
