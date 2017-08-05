@@ -5,8 +5,8 @@
     "jrah <jjames.home@gmail.com>"
   ],
   "description": "",
-  "main": "",
-  "license": "MIT",
+  "main": "index.js",
+  "license": "ISC",
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,12 +15,15 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "dependencies": {
     "craftmodule": "jrah/craftmodule",
-    "susy": "^2.2.12",
-    "tachyons-sass": "^4.7.1"
-  }
+    "susy": "^2.2.12"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/jrah/diversitea.git",
+    "type": "git"
+  },
+  "author": "jrah <jjames.home@gmail.com>"
 }
